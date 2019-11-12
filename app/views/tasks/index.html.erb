@@ -2,7 +2,6 @@
 
 <% @tasks.each do |task| %>
 
-
   <% if task.completed %>
     <%= link_to task_path(task) do %>
       <p><%="[X] #{task.title} " %></p>
@@ -14,3 +13,5 @@
   <% end %>
 
 <% end %>
+
+<%= link_to "Add New Task", new_path %>
